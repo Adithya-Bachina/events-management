@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './home';
 import AboutUs from './about';
 import RegistrationForm from './register.jsx';
@@ -111,6 +111,7 @@ const Header = ({ onFetchLocation, area, errorMessage }) => {
         <Link to="/" style={{ color: '#ffffff', margin: '0 15px' }}>Home</Link>
         <Link to="/about" style={{ color: '#ffffff', margin: '0 15px' }}>About Us</Link>
         <Link to="/register" style={{ color: '#ffffff', margin: '0 15px' }}>Register</Link>
+        <Link to="/Loginform">Login</Link>
       </nav>
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <input 
@@ -402,4 +403,4 @@ const functionHallData = [
 
 
 
-export default App;
+export default App; 

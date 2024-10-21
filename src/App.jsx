@@ -403,4 +403,8 @@ const functionHallData = [
 
 
 
+<<<<<<< HEAD
 export default App; 
+=======
+export default App;
+>>>>>>> 4e7bba3dd69b44fa13d37c92dc7808b3e7774a56

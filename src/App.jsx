@@ -111,6 +111,7 @@ const Header = ({ onFetchLocation, area, errorMessage }) => {
         <Link to="/" style={{ color: '#ffffff', margin: '0 15px' }}>Home</Link>
         <Link to="/about" style={{ color: '#ffffff', margin: '0 15px' }}>About Us</Link>
         <Link to="/register" style={{ color: '#ffffff', margin: '0 15px' }}>Register</Link>
+        <Link to="/Loginform">Login</Link>
       </nav>
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <input 

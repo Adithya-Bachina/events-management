@@ -250,32 +250,31 @@ const EventsSection = () => {
  };
 
 
-const FunctionHallsSection = () => {
-    return (
-        <div>
-            <h1 className="title">Discover Function Halls</h1>
-            <div className="function-hall-grid">
-                {functionHallData.map((hall) => (
-                    <FunctionHallCard key={hall.id} hall={hall} />
-                ))}
-            </div>
-        </div>
-    );
+ const FunctionHallsSection = () => {
+  return (
+    <div>
+      <h1 className="title">Discover Function Halls</h1>
+      <div className="function-hall-grid">
+        {functionHallData.map((hall) => (
+          <FunctionHallCard key={hall.id} hall={hall} />
+        ))}
+      </div>
+    </div>
+  );
 };
 
 const FunctionHallCard = ({ hall }) => {
-    return (
-        <div className="function-hall-card">
-            <img src={hall.image} alt={hall.name} />
-            <div className="content">
-                <h3>{hall.name}</h3>
-                <p>{hall.description}</p>
-                <a href={hall.detailsLink}>View Details</a>
-            </div>
-        </div>
-    );
+  return (
+    <div className="function-hall-card">
+      <img src={hall.image} alt={hall.name} />
+      <div className="content">
+        <h3>{hall.name}</h3>
+        <p>{hall.description}</p>
+        <Link to={`/halls/${hall.id}`}>View Details</Link>
+      </div>
+  </div>
+);
 };
-
 const Footer = () => {
     return (
         <footer>
@@ -403,8 +402,4 @@ const functionHallData = [
 
 
 
-<<<<<<< HEAD
-export default App; 
-=======
-export default App;
->>>>>>> 4e7bba3dd69b44fa13d37c92dc7808b3e7774a56
+export default App;
